@@ -186,7 +186,7 @@ input[type=submit] {
 /*     Header     */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(img/hero-min.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -248,7 +248,21 @@ header h3 {
     border-bottom: 2px solid #e67e22;
 }
 
-/*    Sticky Nav     */
+/*     Mobile Nav     */
+
+.mobile-nav-icon {
+    float:right;
+    margin-top:30px;
+    cursor:pointer;
+    display:none;
+}
+
+.mobile-nav-icon i {
+    font-size:200%;
+    color:#ddd;
+}
+
+/*     Sticky Nav     */
 
 .sticky {
     position:fixed;
@@ -397,7 +411,7 @@ header h3 {
 /*     Testimonials     */
 
 .section-testimonials {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(img/back-customers-min.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -589,4 +603,25 @@ footer p {
     text-align: center;
     font-size: 90%;
     margin-top:20px;
+}
+
+/*     Animation     */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-1.animate__fadeIn,
+.js--wp-2.animate__fadeIn,
+.js--wp-3.animate__fadeInUp {
+    opacity:1;
 }
